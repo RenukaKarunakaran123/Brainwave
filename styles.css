@@ -1,23 +1,15 @@
-* {
+/* Reset default styles */
+body, h1, h2, h3, p, ul {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
 }
 
 header {
-    background-color: #007bff;
-    padding: 20px;
+    background-color: #f57c00;
     color: white;
-}
-
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    padding: 15px 0;
+    text-align: center;
 }
 
 nav ul {
@@ -26,74 +18,99 @@ nav ul {
 
 nav ul li {
     display: inline;
-    margin-left: 20px;
+    margin: 0 15px;
 }
 
 nav ul li a {
     color: white;
     text-decoration: none;
-    font-weight: bold;
 }
 
 .hero {
-    text-align: center;
-    padding: 50px;
-    background-color: #f5f5f5;
-}
-
-.hero-content h1 {
-    font-size: 3rem;
-}
-
-.hero-content p {
-    font-size: 1.5rem;
-    margin: 10px 0;
-}
-
-.cta-button {
-    background-color: #28a745;
-    padding: 10px 20px;
+    background-image: url('../images/juice-hero.jpg');
+    background-size: cover;
     color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    margin-top: 20px;
-}
-
-.hero-image {
-    margin-top: 20px;
-}
-
-.hero-image img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
-}
-
-.features, .teams {
-    padding: 50px;
+    padding: 100px 20px;
     text-align: center;
 }
 
-.features h2, .teams h2 {
-    margin-bottom: 30px;
+.hero h2 {
+    font-size: 3em;
 }
 
-.features-container {
+.hero p {
+    font-size: 1.5em;
+    margin: 20px 0;
+}
+
+.shop-now {
+    padding: 15px 25px;
+    background-color: #ff5722;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2em;
+}
+
+.shop-now:hover {
+    background-color: #e64a19;
+}
+
+.product-grid {
     display: flex;
     justify-content: space-around;
+    margin: 40px 0;
 }
 
-.feature-item {
-    width: 30%;
-    padding: 20px;
+.product {
     border: 1px solid #ddd;
-    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    width: 30%;
+    background-color: #f9f9f9;
+    border-radius: 8px;
 }
 
-footer {
+.product img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+button {
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+#cart {
+    margin: 20px;
+}
+
+#cart ul {
+    list-style-type: none;
+}
+
+#cart li {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+}
+
+#checkout {
     background-color: #007bff;
     color: white;
-    text-align: center;
-    padding: 10px 0;
-    margin-top: 50px;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+#checkout:hover {
+    background-color: #0056b3;
 }

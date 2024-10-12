@@ -3,59 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cricket Landing Page</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Fresh Juice Store</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
-    <!-- Header Section -->
+    <!-- Header -->
     <header>
+        <h1>Fresh Juice Store</h1>
         <nav>
-            <div class="logo">CricketZone</div>
             <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#features">Features</a></li>
-                <li><a href="#teams">Teams</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#juices">Juices</a></li>
+                <li><a href="#cart">Cart (<span id="cart-count">0</span>)</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- Hero Section with Single Image -->
-    <section class="hero">
-        <div class="hero-content">
-            <h1>Welcome to CricketZone</h1>
-            <p>Your #1 source for everything cricket.</p>
-            <a href="#features" class="cta-button">Explore Now</a>
-        </div>
-        <div class="hero-image">
-            <img src="cricket image.webp" alt="Cricket Action Image">
+    <!-- Hero Section -->
+    <section id="home">
+        <div class="hero">
+            <h2>Freshly Squeezed Juices Delivered to Your Doorstep</h2>
+            <p>Made from the freshest fruits and vegetables, just for you!</p>
+            <button class="shop-now">Shop Now</button>
         </div>
     </section>
 
-    <!-- Features Section -->
-    <section id="features" class="features">
-        <h2>Features</h2>
-        <div class="features-container">
-            <div class="feature-item">
-                <h3>Live Scores</h3>
-                <p>Get real-time cricket scores from around the globe.</p>
+    <!-- Juices Section -->
+    <section id="juices">
+        <h2>Our Juices</h2>
+        <div class="product-grid">
+            <!-- Juice 1 -->
+            <div class="product" data-id="1" data-price="5.99">
+                <img src="img1.jpg" alt="Orange Juice">
+                <h3>Orange Juice</h3>
+                <p>Price: $5.99</p>
+                <button class="add-to-cart">Add to Cart</button>
             </div>
-            <div class="feature-item">
-                <h3>Player Stats</h3>
-                <p>Track performance stats of your favorite players and teams.</p>
+            <!-- Juice 2 -->
+            <div class="product" data-id="2" data-price="6.99">
+                <img src="img2.jpg" alt="Green Juice">
+                <h3>Green Detox Juice</h3>
+                <p>Price: $6.99</p>
+                <button class="add-to-cart">Add to Cart</button>
             </div>
-            <div class="feature-item">
-                <h3>Match Schedules</h3>
-                <p>Stay updated with upcoming match schedules and results.</p>
+            <!-- Juice 3 -->
+            <div class="product" data-id="3" data-price="7.99">
+                <img src="img3.jpg" alt="Mixed Berry Juice">
+                <h3>Mixed Berry Juice</h3>
+                <p>Price: $7.99</p>
+                <button class="add-to-cart">Add to Cart</button>
             </div>
+            <!-- Add more juice options -->
         </div>
     </section>
 
-    <!-- Footer Section -->
-    <footer>
-        <p>© 2024 CricketZone. All rights reserved.</p>
-    </footer>
+    <!-- Cart Section -->
+    <section id="cart">
+        <h2>Your Cart</h2>
+        <ul id="cart-items">
+            <!-- Cart items will appear here -->
+        </ul>
+        <p id="total-price">Total: $0.00</p>
+        <button id="checkout">Checkout</button>
+    </section>
 
+    <script src="js/script.js"></script>
 </body>
 </html>
